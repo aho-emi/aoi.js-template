@@ -11,7 +11,28 @@ module.exports=[{
   This is a author only button.
   $addButton[1;Click Me!;secondary;authorButton.$authorID;false]
   
-` // This is normal button.
-}]
+` // This is author only button.
+},{
+  name: "button",
+  type: "interaction",
+  prototype: "button", // Using "prototype" as this interaction belongs to a button.
+  code:`
+  
+  $interactionReply[Clicked the button.]
+  
+  ` // This is normal button interaction.
+},{ 
+  type: "interaction",
+  prototype: "button", // Using "prototype" as this interaction belongs to a button.
+  code:`
+  
+  $interactionReply[Clicked the button.]
 
-// You can use the interaction code in same file or in interaction folder //
+  $onlyIf[$splitText[2]==$authorID]
+  $onlyIf[$splitText[1]==authorButton]
+  $textSplit[$interactionData[customId];.]
+  
+  ` // This is author only button interaction.
+}}]
+
+// You can use the interaction code in same file or in interaction folder
