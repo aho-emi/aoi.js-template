@@ -30,12 +30,6 @@ setup(Util);
 
 
 
-//~~~~~~~~>KEEPINg THe BOt ALIVe<~~~~~~~~//
-const { keep_alive } = require("./keep_alive");
-require('./keep_alive.js')(bot)
-
-
-
 //~~~~~~~~~~>READy EVENt<~~~~~~~~~~//
 bot.readyCommand({
     channel: "1076320808818966590",
