@@ -1,7 +1,9 @@
 <div align="center">
   <h1>AOi.Js Template</h1>
-  <p>An easy and clear aoi.js template by <a href="https://discord.com/users/">Aho_Emi#1611</a></p>
+  <p>An easy, clear & beginner friendly aoi.js template by <a href="https://discord.com/users/">Aho_Emi#1611</a></p>
 </div>
+
+
 
 ### Modules Used
 - Aoi.js & Its dependencies
@@ -98,7 +100,7 @@ Only code which we are making author only is missing the `name:` option as we us
 It will act like a filter. Also authorID can be different so we cant preciesly use `name:` option.
 
 ### Using Interaction code in separate file
-You don't like to use the interaction code and command in file then dont worry<b>
+You don't like to use the interaction code and command in file then dont worry<br>
 You can use it in different folder making it more organized
  
 ```js
@@ -126,3 +128,8 @@ module.exports=[{
 }]
 ```
 Its use in same method as a normal command.
+
+
+
+
+#### For any help mention me in AoI.Js Support server.
