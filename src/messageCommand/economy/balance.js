@@ -8,8 +8,8 @@ module.exports=[{
   $title[$username[$get[user]]'s Balance]
   $color[00ffff]
   $thumbnail[$userAvatar[$get[user]]]
-  $addField[Bank;> $numberSeparator[$getGlobalUserVar[bank;$get[user]];,]$$]
-  $addField[Wallet;> $numberSeparator[$getGlobalUserVar[wallet;$get[user]];,]$$]
+  $addField[Bank;> $ **$numberSeparator[$getGlobalUserVar[bank;$get[user]];,]**;true]
+  $addField[Wallet;> $ **$numberSeparator[$getGlobalUserVar[wallet;$get[user]];,]**;true]
 
   $let[user;$findUser[$msssage]]
   ` // This is global balance meaning it will show same amount in every server
@@ -23,8 +23,8 @@ module.exports=[{
   $title[$username[$get[user]]'s Balance]
   $color[00ffff]
   $thumbnail[$userAvatar[$get[user]]]
-  $addField[Bank;> $numberSeparator[$getUserVar[bank;$get[user]];,]$$]
-  $addField[Wallet;> $numberSeparator[$getUserVar[wallet;$get[user]];,]$$]
+  $addField[Bank;> $ **$numberSeparator[$getUserVar[bank;$get[user]];,]**;true]
+  $addField[Wallet;> $ **$numberSeparator[$getUserVar[wallet;$get[user]];,]**;true]
 
   $let[user;$findUser[$msssage]]
   ` // This is user guild balance meaning it will show different amount in every server
