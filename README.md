@@ -72,6 +72,7 @@ npm i aoi.js@latest aoi.parser chalk@4
         </ul>
       </details>
     </li>
+    <li>README.md</li>
     <li>handler.js</li>
     <li>index.js</li>
   </ul>
