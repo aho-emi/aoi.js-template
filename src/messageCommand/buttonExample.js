@@ -35,4 +35,4 @@ module.exports=[{
   ` // This is author only button interaction.
 }}]
 
-// You can use the interaction code in same file or in interaction folder
+// https://github.com/aho-emi/aoi.js-template/edit/main/README.md#interaction
