@@ -1,15 +1,14 @@
 // Easy, Clear AOi.Js Template by Aho_Emi#1611
 
 //~~~~~~~~~~>AOi.Js<~~~~~~~~~~//
-const aoijs = require("aoi.js");
+const { AoiClient } = require("aoi.js");
 
-const bot = new aoijs.AoiClient({
+const bot = new AoiClient({
   token: process.env.token,
   prefix: ["$getGuildVar[prefix]", "<@$clientID>"],
   intents: ["MessageContent", "Guilds", "GuildMessages", "GuildMessageReactions"],
   events: ["onMessage", "onInteractionCreate", "onMessageUpdate"],
   autoUpdate: false,
-  respondToBots: true,
   database: {
     db: require("aoi.db"),
     type: "aoi.db",
