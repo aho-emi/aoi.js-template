@@ -28,20 +28,69 @@ npm i aoi.js@latest aoi.parser chalk@4
 ### Bot Setup / Creating a client
 - Create an application in discord developer portal
 - create a bot in bot section and copy the token
-- If you are using replit go to secrets > put 'token' in secret_key, paste your token in value > save it.
+Place your bot's token in the following spot:
+```js
+const bot = new AoiClient({
+	token: 'YOUR BOT TOKEN HERE',
+	prefix: '!'
+})
+```
+> If your code is going to be public (for example replit), you should use env to hide your token and make the following change.
+`token: 'YOUR BOT TOKEN HERE'` to `token: env.process.token`
+### Variables
+We will be using handler to access the variable from a different file.
+create a file to store variable, remeber to change the path in index.js or main file.
+```js
+module.exports= {
+  embedColor: "#FFFFFF",
+  prefix: "a!",
+  developer: "715852000096419900",
 
-
+  wallet: 0,
+  bank: 0
+}
+```
+### Status
+We will use status in a different file as well to separate it from index.js
+This status will work as multi status in a single file
+```js
+module.exports={
+  time: 12,
+  statuses:[{
+    text: "Emi's heartbeat ❤️", 
+    type: "LISTENING",
+    presence: "dnd"
+  },{
+    text: "Emi's Emotions 🥺", 
+    type: "PLAYING",
+    presence: "idle"
+  }]
+}
+```
 
 ## Custom Functions
 Custom function in this template are similar to commands<br>
-To make one create a file example.js. I have given the example code there
+To make one create a file example.js.
+```js
+module.exports = async d => {
+const data = d.util.aoiFunc(d);
+const [parameter, optParameter= "715852000096419900" || d.author.id ] = data.inside.splits
+
+  
+text = `Example You say? ${parameter}, You got it right? <@${optParameter}>`
+
+data.result = text
+
+return { code: d.util.setCode(data) }
+}
+```
 
 To use the custom function, its rather easy just use it as a normal function.
 
 **Note:** You can only use custom function by their file name:<br>
 example: if a custom function have `profile.js` as file name you need to use it as `$profile`
 
-Okay so the one I made in `customFunc` folder: `example.js` is used as:<br>
+I have pre-made a custom function `example.js` in `customFunc` folder which is used as:<br>
 
 ```
 $example[This is an example]
@@ -49,7 +98,7 @@ $example[Yep, this is totally an example?;715852000096419900]
 ```
 
 ## Interaction
-You might have seen in the file that I there is `name:` option in some code and no in some because it has its own reason<br>
+You might have seen in the example files that there is `name:` option in some code and not in some<br>
 Only code which we are making author only is missing the `name:` option as we used `customId.$authorID` in customID field of button/select menu,<br>
 It will act like a filter. Also authorID can be different so we cant preciesly use `name:` option.
 
