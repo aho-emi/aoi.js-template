@@ -10,6 +10,9 @@
 - Aoi.parser
 - Chalk
 
+# Disclaimer
+This template uses custom handler to load variables, custom Functions, client statue, commands..<br>
+Just dont touch the handler.js and you are good for the time.
 
 ### Bot Setup
 - Create an application in discord developer portal
