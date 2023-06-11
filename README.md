@@ -10,19 +10,27 @@
 - Aoi.parser
 - Chalk
 
+### Quick Start
+Already know aoi.js? Click below to fork the code.
+<br><br>
+<a href='https://replit.com/github/KOOL13/aoi.js-Bot-Template' target='_blank'><img alt='Repl.it' src='https://img.shields.io/badge/Repl.it-%230D101E.svg?style=for-the-badge&logo=replit&logoColor=white'></a>
+__________________________
+
 # Disclaimer
 This template uses custom handler to load variables, custom Functions, client statue, commands..<br>
 Just dont touch the handler.js and you are good for the time.
-
-### Bot Setup
-- Create an application in discord developer portal
-- create a bot in bot section and copy the token
-- If you are using replit go to secrets > put 'token' in secret_key, paste your token in value > save it.
-
+__________________________
+# Getting Started!
 #### Download the dependencies
 ```bash
 npm i aoi.js@latest aoi.parser chalk@4 
 ```
+### Bot Setup / Creating a client
+- Create an application in discord developer portal
+- create a bot in bot section and copy the token
+- If you are using replit go to secrets > put 'token' in secret_key, paste your token in value > save it.
+
+
 
 ## Custom Functions
 Custom function in this template are similar to commands<br>
