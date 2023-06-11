@@ -21,64 +21,6 @@
 npm i aoi.js@latest aoi.parser chalk@4 
 ```
 
-### Folder structure
-<details>
-  <summary>root</summary>
-  <ul>
-    <li>
-      <details>
-        <summary>client</summary>
-        <ul>
-          <li>status.js</li>
-        </ul>
-      </details>
-    </li>
-    <li>
-      <details>
-        <summary>customFunc</summary>
-        <ul>
-          <li>example.js</li>
-        </ul>
-      </details>
-    </li>
-    <li>
-      <details>
-        <summary>database</summary>
-        <ul>
-          <li>
-            <details>
-              <summary>main</summary>
-              <ul>
-                <li>main_scheme_1.sql</li>
-              </ul>
-            </details>
-          </li>
-        </ul>
-      </details>
-    </li>
-    <li>
-      <details>
-        <summary>src</summary>
-        <ul>
-          <li>
-            <details>
-              <summary>default</summary>
-              <ul>
-                <li>button.js</li>
-                <li>ping.js</li>
-              </ul>
-            </details>
-          </li>
-        </ul>
-      </details>
-    </li>
-    <li>README.md</li>
-    <li>handler.js</li>
-    <li>index.js</li>
-  </ul>
-</details>
-
-#### Add or remove any folder/file as needed.
 ## Custom Functions
 Custom function in this template are similar to commands<br>
 To make one create a file example.js. I have given the example code there
@@ -88,7 +30,7 @@ To use the custom function, its rather easy just use it as a normal function.
 **Note:** You can only use custom function by their file name:<br>
 example: if a custom function have `profile.js` as file name you need to use it as `$profile`
 
-Okay so the one I made in `customFunc` folder: `example.js` its usage are as follows:<br>
+Okay so the one I made in `customFunc` folder: `example.js` is used as:<br>
 
 ```
 $example[This is an example]
