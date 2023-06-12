@@ -33,6 +33,6 @@ module.exports=[{
   $textSplit[$interactionData[customId];.]
   
   ` // This is author only button interaction.
-}}]
+}]
 
 // https://github.com/aho-emi/aoi.js-template/edit/main/README.md#interaction
