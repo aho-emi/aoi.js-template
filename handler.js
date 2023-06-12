@@ -10,10 +10,10 @@ class Handler {
   }
   loadVariables(path) {
     let variables = require(path),
-      startTime = Dat.now();
+      startTime = Date.now();
     console.log(chalk.cyan(`Loading Variables [${Object.keys(variables).length}]`))
     console.log(`-----------------------------------------------`)
-    for (let variable in variable) {
+    for (let variable in variables) {
       console.log(`  Loaded "${chalk.blueBright(variable)}"  |  ${chalk.green(variables[variable])}  |  ${typeof variables[variable]}  `)
     }
     console.log(`-----------------------------------------------`)
