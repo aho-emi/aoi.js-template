@@ -132,7 +132,13 @@ module.exports=[{
 ```
 Its use in same method as a normal command.
 
+## Useful Links
+- <a href="https://aoi.js.org">Aoi.js Docs</a>
+- <a href="https://discord.gg/3vcucB8F5c">Support Server</a>
 
+### For Akurui Development Team
+This setup does exactly uses the setup of v6 but any version can work fine with it<br>
 
 
 #### For any help mention me in AoI.Js Support server.
+I will also try to update it time to time as aoi version updates.
