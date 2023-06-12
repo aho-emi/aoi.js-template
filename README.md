@@ -25,6 +25,7 @@ __________________________
 ```bash
 npm i 
 ```
+Run this in shell or terminal
 ### Bot Setup / Creating a client
 - Create an application in discord developer portal
 - create a bot in bot section and copy the token
