@@ -1,4 +1,4 @@
-// Easy, clear and beginnder friendly AOi.Js Template by Aho_Emi#1611
+// Easy, clear and beginner friendly AOi.Js Template by Aho_Emi#1611
 
 //~~~~~~~~~~>AOi.Js<~~~~~~~~~~//
 const { AoiClient } = require("aoi.js");
