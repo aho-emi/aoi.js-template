@@ -48,7 +48,7 @@ bot.readyCommand({
 //~~~~~~~~~~>HANDLEr<~~~~~~~~~~//
 const Handler = require("./handler.js");
 const handler = new Handler(bot);
-handler.loadVariables('./database/variable.js')
+handler.loadVariables('./database/variables.js')
 handler.loadFunctions('./customFunc/')
 handler.loadStatuses('./client/status.js')
 handler.loadCommands('./src/')
