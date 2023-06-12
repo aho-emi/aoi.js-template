@@ -13,7 +13,7 @@
 ### Quick Start
 Already know aoi.js? Click below to fork the code.
 <br><br>
-<a href='https://replit.com/github/KOOL13/aoi.js-Bot-Template' target='_blank'><img alt='Repl.it' src='https://img.shields.io/badge/Repl.it-%230D101E.svg?style=for-the-badge&logo=replit&logoColor=white'></a>
+<a href='https://replit.com/@Aho-Emi/aoijs-template?v=1' target='_blank'><img alt='Repl.it' src='https://img.shields.io/badge/Repl.it-%230D101E.svg?style=for-the-badge&logo=replit&logoColor=white'></a>
 __________________________
 
 # Disclaimer
