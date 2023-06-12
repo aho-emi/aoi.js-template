@@ -23,7 +23,7 @@ __________________________
 # Getting Started!
 #### Download the dependencies
 ```bash
-npm i aoi.js@latest aoi.parser chalk@4 
+npm i 
 ```
 ### Bot Setup / Creating a client
 - Create an application in discord developer portal
@@ -137,7 +137,7 @@ Its use in same method as a normal command.
 - <a href="https://discord.gg/3vcucB8F5c">Support Server</a>
 
 ### For Akarui Development Team
-This setup does exactly uses the setup of v6 but any version can work fine with it<br>
+This setup doesn't exactly uses the setup of v6 but any version can work fine with it<br>
 
 
 #### For any help mention me in AoI.Js Support server.
