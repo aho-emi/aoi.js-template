@@ -1,7 +1,7 @@
 module.exports=[{
-  name: "interactionModal",
+  name: "modal",
   code: `
-  
+
 $addButton[1;Press Me!;primary;modal;false]
 Pretty Example!
 
@@ -15,10 +15,10 @@ Pretty Example!
   code:`
 
   $interactionModal[Modal;modalID;{actionRow:
-    {textInput:What's your name?:1:nameInput:true:Your pretty name!:2:200}
+    {textInput:What's your name?:1:nameInput:Your pretty name!:true:I love Emi:2:200}
   }
   {actionRow:
-    {textInput:What's your age?:1:ageInput:true:You young soul!:1:3}
+    {textInput:What's your age?:1:ageInput:You young soul!:true:9:1:3}
   }]
 `
   /* The modal itself, we use {textInput} to accept user input.
@@ -27,9 +27,15 @@ The correct usage of {textInput} would be:
 
 {textInput:title:type (1 : small text field, 2 : big text field):customID:required ( true, false ):placeholder:minVal:maxVal}
 
+
+and for aoi.parser
+{
+    textInput: label: style: customId: placeholder: required: value: minLength: maxLength;
+}
+
 */
 },{
-  name: "modal",
+  name: "modalID",
   type: "interaction",
   prototype: "modal", // Using "prototype" as this interaction belongs to a modal.
   code: `
