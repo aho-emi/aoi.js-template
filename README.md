@@ -136,7 +136,7 @@ Its use in same method as a normal command.
 - <a href="https://aoi.js.org">Aoi.js Docs</a>
 - <a href="https://discord.gg/3vcucB8F5c">Support Server</a>
 
-### For Akurui Development Team
+### For Akarui Development Team
 This setup does exactly uses the setup of v6 but any version can work fine with it<br>
 
 
