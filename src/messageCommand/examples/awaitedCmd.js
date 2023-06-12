@@ -8,6 +8,7 @@ module.exports=[{
   
 },{
   name: "awaitedcommandexample",
+  type: "awaited",
   code: `
   Nice to meet you, $message!
   `
