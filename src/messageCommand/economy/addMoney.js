@@ -3,7 +3,7 @@ module.exports=[{
   usage: "{prefix} addmoney 10000 @user",
   code:`
 Gave $message[1] money to $username[$get[user]]. 
-$setGlobalUserVar[money;$math[$getGlobalUserVar[money;$get[user]]+$message[1]];$get[user]]
+$setGlobalUserVar[wallet;$math[$getGlobalUserVar[wallet;$get[user]]+$message[1]];$get[user]]
 
 $let[user;$findUser[$messageSlice[1]]]
   
