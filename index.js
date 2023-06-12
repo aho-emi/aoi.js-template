@@ -1,10 +1,10 @@
-// Easy, Clear AOi.Js Template by Aho_Emi#1611
+// Easy, clear and beginnder friendly AOi.Js Template by Aho_Emi#1611
 
 //~~~~~~~~~~>AOi.Js<~~~~~~~~~~//
 const { AoiClient } = require("aoi.js");
 
 const bot = new AoiClient({
-  token: process.env.token,
+  token: process.env.token, // or "YOUR TOKEN"
   prefix: ["$getGuildVar[prefix]", "<@$clientID>"],
   intents: ["MessageContent", "Guilds", "GuildMessages", "GuildMessageReactions"],
   events: ["onMessage", "onInteractionCreate", "onMessageUpdate"],
