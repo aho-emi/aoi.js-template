@@ -13,7 +13,7 @@ class Handler {
       startTime = Dat.now();
     console.log(chalk.cyan(`Loading Variables [${Object.keys(variables).length}]`))
     console.log(`-----------------------------------------------`)
-    for (let variable in variables) {
+    for (let variable in variable) {
       console.log(`  Loaded "${chalk.blueBright(variable)}"  |  ${chalk.green(variables[variable])}  |  ${typeof variables[variable]}  `)
     }
     console.log(`-----------------------------------------------`)
