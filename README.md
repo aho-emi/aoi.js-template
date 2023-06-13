@@ -97,6 +97,15 @@ I have pre-made a custom function `example.js` in `customFunc` folder which is u
 $example[This is an example]
 $example[Yep, this is totally an example?;715852000096419900]
 ```
+custom function now only supports discord.js code, if you want to use aoi.js custom function then use these format in index.js
+```js
+bot.functionManager.createFunction({
+    name: "$function", // custom function name, can be anything.
+    params: [ "parameter", ... ], // function parameters, $function[parameter;parameter]
+    type: "aoi.js", // custom function type
+    code: "..." // the code that will be executed
+});
+```
 
 ## Interaction
 You might have seen in the example files that there is `name:` option in some code and not in some<br>
